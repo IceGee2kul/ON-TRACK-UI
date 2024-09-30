@@ -1,0 +1,293 @@
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    background-color: rgb(237, 64, 1);
+}
+
+section {
+    width: 50%; 
+    height: 100vh;
+    background-color: white;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem; 
+}
+
+@media (min-width: 840px) {
+    body {
+        background-color: rgb(237, 64, 1);
+    }
+    
+    section {
+        width: 50%; 
+        height: 100vh;
+        background-color: white;
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem; 
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 850px) {
+    body{
+        background-color: none;
+    }
+
+    section {
+        width: 100%; 
+        height: 100vh;
+        background-color: white;
+        float: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem; 
+    }
+
+}
+
+@media (max-width: 600px){
+    body{
+        background-color: none;
+    }
+
+    section {
+        width: 100%; 
+        height: 100vh;
+        background-color: white;
+        float: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem; 
+    }
+
+
+}
+
+.signin {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signhead h1 {
+    text-align: center;
+}
+
+.signinp {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.signinp input {
+    border: 2px solid transparent;
+    background-color: rgb(216, 216, 216);
+    border-radius: 20px;
+    height: 2.8em;
+    width: 100%; 
+    padding-left: 1em;
+}
+
+.remb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem; 
+}
+
+
+
+@media (max-width: 1000px) and (min-width: 851px) {
+    .remb {
+        gap: 5rem;
+    }
+
+
+}
+
+@media (max-width: 650px) and (min-width: 400px) {
+    .remb {
+        gap: 4rem;
+    }
+
+
+}
+
+@media (max-width: 400px) and (min-width: 360px) {
+    .remb {
+        gap: 3rem;
+    }
+
+}
+
+@media (max-width: 359px) and (min-width: 300px) {
+    .remb {
+        gap: 3rem;
+    }
+
+    .remb p{
+        font-size: 0.8rem;
+    }
+    
+
+    .rem p{
+        color: black;
+        text-decoration: none;
+        font-size: 0.8rem;
+    }
+    
+
+
+}
+
+.remb p {
+    color: rgb(171, 171, 171);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.remb p:hover {
+    color: rgb(189, 189, 189);
+    text-decoration: none;
+}
+
+.rem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.rem p{
+    color: black;
+    text-decoration: none;
+}
+
+.input {
+    width: 2em;
+    height: 1rem;
+    accent-color: rgb(205, 56, 2);
+    cursor: pointer;
+}
+
+.signbtn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signbtn button {
+    border: 2px solid transparent;
+    background-color: rgb(233, 62, 0);
+    border-radius: 20px;
+    height: 2.6em;
+    width: 100%; 
+    padding-left: 1em;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.signbtn button:hover {
+    background-color: orangered;
+    cursor: pointer;
+}
+
+.or {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.or p {
+    color: rgb(171, 171, 171);
+    cursor: pointer;
+}
+
+.or p:hover {
+    color: rgb(189, 189, 189);
+}
+
+.line {
+    background-color: gainsboro;
+    width: 30%;
+    height: 0.3vh;
+}
+
+.signopt {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.google,
+.apple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid gainsboro;
+    border-radius: 20px;
+    height: 3em;
+    width: 100%; 
+    font-weight: bold;
+    font-size: 1.1rem;
+    gap: 1rem;
+}
+
+.google:hover,
+.apple:hover {
+    background-color: rgb(223, 223, 223);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.google svg,
+.apple svg {
+    width: 30px;
+    height: 30px;
+}
+
+#signupP {
+    color: rgb(233, 62, 0);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#signupP:hover {
+    color: orangered;
+}
+
+#loginP {
+    color: rgb(233, 62, 0);
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#loginP:hover {
+    color: orangered;
+}
